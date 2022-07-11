@@ -2,7 +2,11 @@ from urllib.parse import quote_plus
 import praw
 import time
 import random
+import datetime
 
+d1 = datetime.datetime.now()
+d2 = datetime.datetime(2022, 7, 11, 12, 00, 00)
+d3 = datetime.datetime(2022, 7, 11, 7, 00, 00)
 
 reddit = praw.Reddit(client_id="s_S1HyFfDlzs_TgMCH-mBg",
                      client_secret="guEi7lqCBFPndZIEnL9xeZUC_ZmDCQ",
@@ -16,8 +20,9 @@ titles = []
 title = random.choice(titles)
 link = "link"
 
-for subreddit in subreddits:
-    reddit.subreddit(subreddit).submit(title, url=link)
-    print("successfully printed to", subreddit)
-    time.sleep(300)
-print("Uploading is finished")
+if d1 < d2 and d1 > d2:
+  for subreddit in subreddits:
+      reddit.subreddit(subreddit).submit(title, url=link)
+      print("successfully printed to", subreddit)
+      time.sleep(300)
+  print("Uploading is finished")
