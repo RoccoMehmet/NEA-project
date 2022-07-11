@@ -1,0 +1,23 @@
+from urllib.parse import quote_plus
+import praw
+import time
+import random
+
+
+reddit = praw.Reddit(client_id="s_S1HyFfDlzs_TgMCH-mBg",
+                     client_secret="guEi7lqCBFPndZIEnL9xeZUC_ZmDCQ",
+                     user_agent="boosterbot by /u/username",
+                     username="username",
+                     password="password")
+
+print(reddit.read_only)
+subreddits = []
+titles = []
+title = random.choice(titles)
+link = "link"
+
+for subreddit in subreddits:
+    reddit.subreddit(subreddit).submit(title, url=link)
+    print("successfully printed to", subreddit)
+    time.sleep(300)
+print("Uploading is finished")
