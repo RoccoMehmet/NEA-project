@@ -9,8 +9,8 @@ d1 = datetime.datetime.now()
 d2 = datetime.datetime(2022, 7, x, 12, 00, 00)
 d3 = datetime.datetime(2022, 7, x, 7, 00, 00)
 
-reddit = praw.Reddit(client_id="s_S1HyFfDlzs_TgMCH-mBg",
-                     client_secret="guEi7lqCBFPndZIEnL9xeZUC_ZmDCQ",
+reddit = praw.Reddit(client_id="",
+                     client_secret="",
                      user_agent="boosterbot by /u/username",
                      username="username",
                      password="password")
