@@ -4,7 +4,6 @@ from wordcloud import WordCloud
 import pandas as pd
 import numpy as np
 import re
-import matplotlib.pyplot as plt
 
 consumerKey = ""
 consumerSecret = ""
